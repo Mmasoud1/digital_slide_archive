@@ -15,7 +15,7 @@ import time
 import uuid
 from distutils.version import LooseVersion
 
-if not (LooseVersion('1.9') <= LooseVersion(docker.version)):
+if not (LooseVersion('1.9') <= LooseVersion(docker.__version__)):
     raise Exception('docker or docker-py must be >= version 1.9')
 
 
